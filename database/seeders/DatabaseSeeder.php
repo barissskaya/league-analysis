@@ -2,6 +2,8 @@
 
 namespace Database\Seeders;
 
+use App\Models\Page;
+use App\Models\Teams;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -19,5 +21,16 @@ class DatabaseSeeder extends Seeder
             'name' => 'Test User',
             'email' => 'test@example.com',
         ]);
+
+        $teams = ['Arsenal',  'Chelsea', 'Liverpool', 'Manchester City'];
+
+        foreach ($teams as $team){
+            Teams::factory()->create(
+                [
+                    'name' => $team,
+                ]
+            );
+        }
+
     }
 }
