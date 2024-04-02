@@ -1,0 +1,50 @@
+:root {
+    --bg-color: #EBEBEB;
+    --headline-bg-color: #000;
+    --headline-color: #FFF;
+    --font-regular: "Roboto", sans-serif;
+    --font-regular-weight: 400;
+    --font-regular-style: normal;
+    --font-light: "Roboto", sans-serif;
+    --font-light-weight: 300;
+    --font-light-style: normal;
+    --font-medium: "Roboto", sans-serif;
+    --font-medium-weight: 500;
+    --font-medium-style: normal;
+}
+
+ul, ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--bg-color);
+    padding-top: 5rem;
+    font-family: var(--font-regular);
+    font-weight: var(--font-regular-weight);
+    font-style: var(--font-regular-style);
+}
+
+.headline {
+    background: var(--headline-bg-color);
+    color: var(--headline-color);
+    padding: 1rem;
+    font-family: var(--font-light);
+    font-weight: var(--font-light-weight);
+    font-style: var(--font-light-style);
+    font-size: 1.5rem;
+}
+
+.tournament-container li{
+    font-size: 1.5rem;
+    padding: 1rem 1rem;
+    border-bottom: 1px solid #c9c9c9;
+    font-family: var(--font-light);
+    font-weight: var(--font-light-weight);
+    font-style: var(--font-light-style);
+}
+.tournament-container li:last-child{
+    border-bottom: none;
+}
