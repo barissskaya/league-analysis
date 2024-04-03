@@ -12,13 +12,6 @@
     --font-medium-weight: 500;
     --font-medium-style: normal;
 }
-
-ul, ol {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
 body {
     background: var(--bg-color);
     padding-top: 5rem;
@@ -26,25 +19,30 @@ body {
     font-weight: var(--font-regular-weight);
     font-style: var(--font-regular-style);
 }
-
-.headline {
+th{
+    font-weight: inherit;
+}
+table thead{
     background: var(--headline-bg-color);
     color: var(--headline-color);
-    padding: 1rem;
     font-family: var(--font-light);
     font-weight: var(--font-light-weight);
     font-style: var(--font-light-style);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
-.tournament-container li{
-    font-size: 1.5rem;
-    padding: 1rem 1rem;
+table tbody tr{
+    font-size: 1.2rem;
     border-bottom: 1px solid #c9c9c9;
     font-family: var(--font-light);
     font-weight: var(--font-light-weight);
     font-style: var(--font-light-style);
 }
-.tournament-container li:last-child{
+table tbody tr:last-child{
     border-bottom: none;
+}
+table tbody tr td{border:none;}
+
+.table-responsive{
+    margin-bottom: 2rem;
 }

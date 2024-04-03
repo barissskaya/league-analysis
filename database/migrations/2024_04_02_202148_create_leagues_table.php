@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->timestamp('start');
             $table->timestamp('end');
-            $table->boolean('status')->default(0);
+            $table->boolean('status')->default(1);
             $table->tinyInteger('current_week');
             $table->tinyInteger('total_week');
         });
