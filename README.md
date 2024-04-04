@@ -20,7 +20,9 @@ It is a simulation study that pairs four football teams, divides them into weekl
 ``DB_PASSWORD=laravel``
 ### 7- Build the project.
 ``lando build``
-### 8- Go to the website.
+### 8- Create the tables.
+``lando artisan migrate:fresh --seed``
+### 9- Go to the website.
 [league.lndo.site](https://league.lndo.site/)
 
 
@@ -72,7 +74,9 @@ Dört futbol takımını eşleştirip haftalık gruplara bölerek, maçları sim
   ``DB_PASSWORD=laravel``
 ### 7- Build alın.
 ``lando build``
-### 8- Siteye gidin
+### 8- Tabloları oluşturun.
+``lando artisan migrate:fresh --seed``
+### 9- Siteye gidin
 [league.lndo.site](https://league.lndo.site/)
 
 # Ekran Resimleri
