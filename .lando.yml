@@ -1,0 +1,38 @@
+name: league
+recipe: laravel
+config:
+  webroot: public
+  php: '8.2'
+  build:
+    - COMPOSER_MEMORY_LIMIT=-1 composer install
+services:
+  node:
+    type: node:18
+    scanner: false
+    ports:
+      - 3013:3009
+    build:
+      - npm install
+  pma:
+    type: phpmyadmin
+    hosts:
+      - database
+tooling:
+  npm:
+    service: node
+    cmd: npm
+  dev:
+    service: node
+    cmd: npm run dev
+  build:
+    service: node
+    cmd: npm run build
+  migrate:
+    service: appserver
+    cmd: php artisan migrate
+  cr:
+    service: appserver
+    cmd: php artisan optimize:clear
+proxy:
+  pma:
+    - league.pma.lndo.site

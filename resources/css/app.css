@@ -1,0 +1,48 @@
+:root {
+    --bg-color: #EBEBEB;
+    --headline-bg-color: #000;
+    --headline-color: #FFF;
+    --font-regular: "Roboto", sans-serif;
+    --font-regular-weight: 400;
+    --font-regular-style: normal;
+    --font-light: "Roboto", sans-serif;
+    --font-light-weight: 300;
+    --font-light-style: normal;
+    --font-medium: "Roboto", sans-serif;
+    --font-medium-weight: 500;
+    --font-medium-style: normal;
+}
+body {
+    background: var(--bg-color);
+    padding-top: 5rem;
+    font-family: var(--font-regular);
+    font-weight: var(--font-regular-weight);
+    font-style: var(--font-regular-style);
+}
+th{
+    font-weight: inherit;
+}
+table thead{
+    background: var(--headline-bg-color);
+    color: var(--headline-color);
+    font-family: var(--font-light);
+    font-weight: var(--font-light-weight);
+    font-style: var(--font-light-style);
+    font-size: 1.2rem;
+}
+
+table tbody tr{
+    font-size: 1.2rem;
+    border-bottom: 1px solid #c9c9c9;
+    font-family: var(--font-light);
+    font-weight: var(--font-light-weight);
+    font-style: var(--font-light-style);
+}
+table tbody tr:last-child{
+    border-bottom: none;
+}
+table tbody tr td{border:none;}
+
+.table-responsive{
+    margin-bottom: 2rem;
+}
